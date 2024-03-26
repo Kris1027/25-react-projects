@@ -3,11 +3,18 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Accordion } from "./projects/accordion/Accordion";
+import { Layout } from "./Layout";
 
 const router = createBrowserRouter([
   {
-    path: "accordion",
-    element: <Accordion />,
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/accordion",
+        element: <Accordion />,
+      },
+    ],
   },
 ]);
 
