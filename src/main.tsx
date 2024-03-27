@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Accordion } from "./projects/accordion/Accordion";
 import { Layout } from "./Layout";
 import { RandomColor } from "./projects/random-color/RandomColor";
+import { StarRating } from "./projects/star-rating/StarRating";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/random-color",
         element: <RandomColor />,
+      },
+      {
+        path: "/star-rating",
+        element: <StarRating />,
       },
     ],
   },

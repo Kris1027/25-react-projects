@@ -12,6 +12,7 @@ export const Layout = () => {
         <nav className="flex gap-4">
           <Link to="accordion">Accordion</Link>
           <Link to="random-color">Random Color</Link>
+          <Link to="star-rating">Star Rating</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">
