@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-export const StarRating = () => {
-  const [rating, setRating] = useState(0);
-  const [hover, setHover] = useState(0);
-
-  const numberOfStars = 10;
-  const size = 40;
+export const StarRating = ({
+  numberOfStars = 10,
+  size = 40,
+}: {
+  numberOfStars?: number;
+  size?: number;
+}) => {
+  const [rating, setRating] = useState<number>(0);
+  const [hover, setHover] = useState<number>(0);
 
   return (
     <div className="flex p-4">
