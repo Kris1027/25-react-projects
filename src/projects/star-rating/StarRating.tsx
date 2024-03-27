@@ -7,13 +7,13 @@ export const StarRating = ({
 }: {
   numberOfStars?: number;
   size?: number;
-}) => {
+}): JSX.Element => {
   const [rating, setRating] = useState<number>(0);
   const [hover, setHover] = useState<number>(0);
 
   return (
     <div className="flex p-4">
-      {[...Array(numberOfStars)].map((_, index) => {
+      {[...Array(numberOfStars)].map((_, index: number) => {
         index += 1;
         return (
           <FaStar

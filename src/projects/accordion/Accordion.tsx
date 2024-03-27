@@ -3,7 +3,7 @@ import { accordionData } from "./data";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { twMerge } from "tailwind-merge";
 
-export const Accordion = () => {
+export const Accordion: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<number | null>(null);
 
   const handleSelectedItem = (getCurrentId: number | null = null) => {
