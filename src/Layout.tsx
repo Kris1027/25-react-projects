@@ -14,7 +14,7 @@ export const Layout = () => {
           <Link to="random-color">Random Color</Link>
         </nav>
       </header>
-      <main className="p-4 flex justify-center items-center">
+      <main className="flex justify-center items-center">
         <Outlet />
       </main>
     </>

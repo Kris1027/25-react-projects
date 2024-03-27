@@ -30,7 +30,7 @@ export const RandomColor = () => {
   return (
     <div>
       <div className="w-screen h-screen" style={{ backgroundColor: color }}>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center p-4">
           <button
             onClick={() => setTypeOfColor("hex")}
             className="bg-slate-300 text-red-500 px-4 py-2 hover:bg-slate-200 active:scale-90 rounded-lg font-bold"
