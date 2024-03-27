@@ -26,16 +26,16 @@ export const ImageSlider: React.FC = () => {
       <div className="flex items-center pb-4">
         <FaArrowAltCircleLeft
           size={40}
-          className="cursor-pointer active:scale-95"
+          className="cursor-pointer active:scale-95 hover:text-red-500"
           onClick={handlePrevImage}
         />
         <img
-          className="w-96 h-96"
+          className="w-[40rem] h-[40rem] object-cover rounded-lg shadow-lg"
           src={`/src/assets/image-slider/carousel-${activeImage}.jpg`}
         />
         <FaArrowAltCircleRight
           size={40}
-          className="cursor-pointer active:scale-95"
+          className="cursor-pointer active:scale-95 hover:text-red-500"
           onClick={handleNextImage}
         />
       </div>
