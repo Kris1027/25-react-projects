@@ -11,7 +11,7 @@ export const Accordion = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       {accordionData.map((a) => {
         return (
           <div key={a.id}>

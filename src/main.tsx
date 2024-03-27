@@ -4,6 +4,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Accordion } from "./projects/accordion/Accordion";
 import { Layout } from "./Layout";
+import { RandomColor } from "./projects/random-color/RandomColor";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/accordion",
         element: <Accordion />,
+      },
+      {
+        path: "/random-color",
+        element: <RandomColor />,
       },
     ],
   },

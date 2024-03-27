@@ -9,11 +9,12 @@ export const Layout = () => {
             25 React Projects
           </Link>
         </h1>
-        <nav>
+        <nav className="flex gap-4">
           <Link to="accordion">Accordion</Link>
+          <Link to="random-color">Random Color</Link>
         </nav>
       </header>
-      <main>
+      <main className="p-4 flex justify-center items-center">
         <Outlet />
       </main>
     </>
