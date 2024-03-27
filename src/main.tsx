@@ -6,6 +6,7 @@ import { Accordion } from "./projects/accordion/Accordion";
 import { Layout } from "./Layout";
 import { RandomColor } from "./projects/random-color/RandomColor";
 import { StarRating } from "./projects/star-rating/StarRating";
+import { ImageSlider } from "./projects/image-slider/ImageSlider";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/star-rating",
         element: <StarRating />,
+      },
+      {
+        path: "/image-slider",
+        element: <ImageSlider />,
       },
     ],
   },

@@ -13,6 +13,7 @@ export const Layout = () => {
           <Link to="accordion">Accordion</Link>
           <Link to="random-color">Random Color</Link>
           <Link to="star-rating">Star Rating</Link>
+          <Link to="image-slider">Image Slider</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">
