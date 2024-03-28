@@ -23,10 +23,10 @@ export const ImageSlider: React.FC = () => {
 
   return (
     <div className="p-4">
-      <div className="flex items-center pb-4">
+      <div className="flex items-center pb-4 relative">
         <FaArrowAltCircleLeft
           size={40}
-          className="cursor-pointer active:scale-95 hover:text-red-500"
+          className="absolute left-0 top-1/2 opacity-50 -translate-y-1/2 cursor-pointer active:scale-95 hover:text-red-500 hover:opacity-100"
           onClick={handlePrevImage}
         />
         <img
@@ -35,46 +35,46 @@ export const ImageSlider: React.FC = () => {
         />
         <FaArrowAltCircleRight
           size={40}
-          className="cursor-pointer active:scale-95 hover:text-red-500"
+          className="absolute right-0 top-1/2 opacity-50 -translate-y-1/2 cursor-pointer active:scale-95 hover:text-red-500 hover:opacity-100"
           onClick={handleNextImage}
         />
-      </div>
-      <div className="flex gap-2 justify-center">
-        <button
-          className={twMerge(
-            "w-4 h-4 bg-black rounded-full",
-            activeImage === 1 && "bg-red-500"
-          )}
-          onClick={() => setActiveImage(1)}
-        ></button>
-        <button
-          className={twMerge(
-            "w-4 h-4 bg-black rounded-full",
-            activeImage === 2 && "bg-red-500"
-          )}
-          onClick={() => setActiveImage(2)}
-        ></button>
-        <button
-          className={twMerge(
-            "w-4 h-4 bg-black rounded-full",
-            activeImage === 3 && "bg-red-500"
-          )}
-          onClick={() => setActiveImage(3)}
-        ></button>
-        <button
-          className={twMerge(
-            "w-4 h-4 bg-black rounded-full",
-            activeImage === 4 && "bg-red-500"
-          )}
-          onClick={() => setActiveImage(4)}
-        ></button>
-        <button
-          className={twMerge(
-            "w-4 h-4 bg-black rounded-full",
-            activeImage === 5 && "bg-red-500"
-          )}
-          onClick={() => setActiveImage(5)}
-        ></button>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 justify-center opacity-50 hover:opacity-100">
+          <button
+            className={twMerge(
+              "w-4 h-4 bg-black rounded-full",
+              activeImage === 1 && "bg-red-500"
+            )}
+            onClick={() => setActiveImage(1)}
+          ></button>
+          <button
+            className={twMerge(
+              "w-4 h-4 bg-black rounded-full",
+              activeImage === 2 && "bg-red-500"
+            )}
+            onClick={() => setActiveImage(2)}
+          ></button>
+          <button
+            className={twMerge(
+              "w-4 h-4 bg-black rounded-full",
+              activeImage === 3 && "bg-red-500"
+            )}
+            onClick={() => setActiveImage(3)}
+          ></button>
+          <button
+            className={twMerge(
+              "w-4 h-4 bg-black rounded-full",
+              activeImage === 4 && "bg-red-500"
+            )}
+            onClick={() => setActiveImage(4)}
+          ></button>
+          <button
+            className={twMerge(
+              "w-4 h-4 bg-black rounded-full",
+              activeImage === 5 && "bg-red-500"
+            )}
+            onClick={() => setActiveImage(5)}
+          ></button>
+        </div>
       </div>
     </div>
   );
