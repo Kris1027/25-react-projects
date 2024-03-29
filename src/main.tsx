@@ -7,6 +7,7 @@ import { Layout } from "./Layout";
 import { RandomColor } from "./projects/random-color/RandomColor";
 import { StarRating } from "./projects/star-rating/StarRating";
 import { ImageSlider } from "./projects/image-slider/ImageSlider";
+import { LoadMoreData } from "./projects/load-more-data/LoadMoreData";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/image-slider",
         element: <ImageSlider />,
+      },
+      {
+        path: "/load-more-data",
+        element: <LoadMoreData />,
       },
     ],
   },
