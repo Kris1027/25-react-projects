@@ -46,7 +46,7 @@ export const LoadMoreData = () => {
 
   return (
     <div className="p-4">
-      <div className="grid grid-cols-10 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {products.map((product: ProductProps) => (
           <div className="border-2 border-black" key={product.id}>
             <img
