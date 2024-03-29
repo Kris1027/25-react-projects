@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
 
+type ProductProps = {
+  id: number;
+  title: string;
+  thumbnail: string;
+};
+
 export const LoadMoreData = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [products, setProducts] = useState([]);
-  const [count, setCount] = useState(0);
-  const [disableButton, setDisableButton] = useState(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [products, setProducts] = useState<ProductProps[]>([]);
+  const [count, setCount] = useState<number>(0);
+  const [disableButton, setDisableButton] = useState<boolean>(false);
 
   const fetchProducts = async () => {
     try {
@@ -42,7 +48,7 @@ export const LoadMoreData = () => {
     <div className="p-4">
       <div className="flex flex-wrap justify-center gap-4">
         {products && products.length
-          ? products.map((product) => (
+          ? products.map((product: ProductProps) => (
               <div
                 className="border-2 border-black w-1/6 h-auto"
                 key={product.id}
