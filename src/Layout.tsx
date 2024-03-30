@@ -15,6 +15,7 @@ export const Layout = () => {
           <Link to="star-rating">Star Rating</Link>
           <Link to="image-slider">Image Slider</Link>
           <Link to="load-more-data">Load More Data</Link>
+          <Link to="tree-view">Tree View</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">

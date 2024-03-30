@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -8,6 +7,7 @@ import { RandomColor } from "./projects/random-color/RandomColor";
 import { StarRating } from "./projects/star-rating/StarRating";
 import { ImageSlider } from "./projects/image-slider/ImageSlider";
 import { LoadMoreData } from "./projects/load-more-data/LoadMoreData";
+import { TreeView } from "./projects/tree-view/TreeView";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/load-more-data",
         element: <LoadMoreData />,
+      },
+      {
+        path: "/tree-view",
+        element: <TreeView />,
       },
     ],
   },
