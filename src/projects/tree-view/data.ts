@@ -1,4 +1,10 @@
-export const menus = [
+export type MenuProps = {
+  label: string;
+  to: string;
+  children?: MenuProps[];
+};
+
+export const menus: MenuProps[] = [
   {
     label: "Home",
     to: "/",

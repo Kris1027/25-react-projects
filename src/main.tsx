@@ -8,6 +8,7 @@ import { StarRating } from "./projects/star-rating/StarRating";
 import { ImageSlider } from "./projects/image-slider/ImageSlider";
 import { LoadMoreData } from "./projects/load-more-data/LoadMoreData";
 import { TreeView } from "./projects/tree-view/TreeView";
+import { menus } from "./projects/tree-view/data";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tree-view",
-        element: <TreeView />,
+        element: <TreeView menus={menus} />,
       },
     ],
   },
