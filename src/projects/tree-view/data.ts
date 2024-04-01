@@ -20,6 +20,18 @@ export const menus: MenuProps[] = [
           {
             label: "Location",
             to: "/location",
+            children: [
+              {
+                label: "City",
+                to: "/city",
+                children: [
+                  {
+                    label: "London",
+                    to: "/london",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
@@ -36,10 +48,16 @@ export const menus: MenuProps[] = [
       {
         label: "Security",
         to: "/security",
-      },
-      {
-        label: "Register",
-        to: "/register",
+        children: [
+          {
+            label: "Login",
+            to: "/login",
+          },
+          {
+            label: "Register",
+            to: "/register",
+          },
+        ],
       },
     ],
   },
