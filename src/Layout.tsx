@@ -16,6 +16,7 @@ export const Layout = () => {
           <Link to="image-slider">Image Slider</Link>
           <Link to="load-more-data">Load More Data</Link>
           <Link to="tree-view">Tree View</Link>
+          <Link to="qr-code-generator">QR Code Generator</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">

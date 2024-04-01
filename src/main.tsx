@@ -9,6 +9,7 @@ import { ImageSlider } from "./projects/image-slider/ImageSlider";
 import { LoadMoreData } from "./projects/load-more-data/LoadMoreData";
 import { TreeView } from "./projects/tree-view/TreeView";
 import { menus } from "./projects/tree-view/data";
+import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/tree-view",
         element: <TreeView menus={menus} />,
+      },
+      {
+        path: "qr-code-generator",
+        element: <QrCodeGenerator />,
       },
     ],
   },
