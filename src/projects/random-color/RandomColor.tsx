@@ -29,7 +29,10 @@ export const RandomColor: React.FC = () => {
 
   return (
     <div>
-      <div className="w-screen h-screen" style={{ backgroundColor: color }}>
+      <div
+        className="w-screen h-screen transition-colors duration-500"
+        style={{ backgroundColor: color }}
+      >
         <div className="flex gap-4 justify-center p-4">
           <button
             onClick={() => setTypeOfColor("hex")}
