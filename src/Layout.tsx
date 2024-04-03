@@ -17,6 +17,7 @@ export const Layout = () => {
           <Link to="load-more-data">Load More Data</Link>
           <Link to="tree-view">Tree View</Link>
           <Link to="qr-code-generator">QR Code Generator</Link>
+          <Link to="light-dark-mode">Light Dark Mode</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">

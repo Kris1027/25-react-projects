@@ -10,6 +10,7 @@ import { LoadMoreData } from "./projects/load-more-data/LoadMoreData";
 import { TreeView } from "./projects/tree-view/TreeView";
 import { menus } from "./projects/tree-view/data";
 import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
+import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
 
 const router = createBrowserRouter([
   {
@@ -41,8 +42,12 @@ const router = createBrowserRouter([
         element: <TreeView menus={menus} />,
       },
       {
-        path: "qr-code-generator",
+        path: "/qr-code-generator",
         element: <QrCodeGenerator />,
+      },
+      {
+        path: "/light-dark-mode",
+        element: <LightDarkMode />,
       },
     ],
   },
