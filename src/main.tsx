@@ -52,7 +52,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/scroll-indicator",
-        element: <ScrollIndicator />,
+        element: (
+          <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
+        ),
       },
     ],
   },
