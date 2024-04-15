@@ -11,6 +11,7 @@ import { TreeView } from "./projects/tree-view/TreeView";
 import { menus } from "./projects/tree-view/data";
 import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
 import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
+import { ScrollIndicator } from "./projects/scroll-indicator/ScrollIndicator";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/light-dark-mode",
         element: <LightDarkMode />,
+      },
+      {
+        path: "/scroll-indicator",
+        element: <ScrollIndicator />,
       },
     ],
   },
