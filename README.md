@@ -1,5 +1,7 @@
 ### 25 React Projects
 
+`live` : <https://25-react-projects.netlify.app/>
+
 - [x] Introduction
 - [x] Accordion
 - [x] Random Color Generator
