@@ -12,7 +12,7 @@ import { menus } from "./projects/tree-view/data";
 import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
 import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
 import { ScrollIndicator } from "./projects/scroll-indicator/ScrollIndicator";
-import { Tabs } from "./projects/tabs/Tabs";
+import { TabTest } from "./projects/tabs/TabTest";
 
 const router = createBrowserRouter([
   {
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tabs",
-        element: <Tabs />,
+        element: <TabTest />,
       },
     ],
   },
