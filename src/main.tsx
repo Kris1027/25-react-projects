@@ -12,6 +12,7 @@ import { menus } from "./projects/tree-view/data";
 import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
 import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
 import { ScrollIndicator } from "./projects/scroll-indicator/ScrollIndicator";
+import { Tabs } from "./projects/tabs/Tabs";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         element: (
           <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
         ),
+      },
+      {
+        path: "/tabs",
+        element: <Tabs />,
       },
     ],
   },

@@ -19,6 +19,7 @@ export const Layout = () => {
           <Link to="qr-code-generator">QR Code Generator</Link>
           <Link to="light-dark-mode">Light Dark Mode</Link>
           <Link to="scroll-indicator">Scroll Indicator</Link>
+          <Link to="tabs">Tabs</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">
