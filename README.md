@@ -2,7 +2,6 @@
 
 `live` : <https://25-react-projects.netlify.app/>
 
-- [x] Introduction
 - [x] Accordion
 - [x] Random Color Generator
 - [x] Star Rating
@@ -13,7 +12,7 @@
 - [x] Light and Dark Mode / Theme Switch / Dark Theme
 - [x] Scroll Indicator
 - [x] Tabs
-- [ ] Modal Popup
+- [x] Modal Popup
 - [ ] Github Profile Finder
 - [ ] Search Autocomplete with API implementation
 - [ ] Tic Tac Toe
