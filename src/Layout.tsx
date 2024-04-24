@@ -20,6 +20,7 @@ export const Layout = () => {
           <Link to="light-dark-mode">Light Dark Mode</Link>
           <Link to="scroll-indicator">Scroll Indicator</Link>
           <Link to="tabs">Tabs</Link>
+          <Link to="custom-modal-popup">Custom Modal</Link>
         </nav>
       </header>
       <main className="flex justify-center items-center">

@@ -13,6 +13,7 @@ import { QrCodeGenerator } from "./projects/qr-code-generator/QrCodeGenerator";
 import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
 import { ScrollIndicator } from "./projects/scroll-indicator/ScrollIndicator";
 import { TabTest } from "./projects/tabs/TabTest";
+import { ModalTest } from "./projects/custom-modal-popup/ModalTest";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "/tabs",
         element: <TabTest />,
+      },
+      {
+        path: "/custom-modal-popup",
+        element: <ModalTest />,
       },
     ],
   },
