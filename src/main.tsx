@@ -14,6 +14,7 @@ import { LightDarkMode } from "./projects/light-dark-mode/LightDarkMode";
 import { ScrollIndicator } from "./projects/scroll-indicator/ScrollIndicator";
 import { TabTest } from "./projects/tabs/TabTest";
 import { ModalTest } from "./projects/custom-modal-popup/ModalTest";
+import { GithubProfileFinder } from "./projects/github-profile-finder/GithubProfileFinder";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/custom-modal-popup",
         element: <ModalTest />,
+      },
+      {
+        path: "github-profile-finder",
+        element: <GithubProfileFinder />,
       },
     ],
   },

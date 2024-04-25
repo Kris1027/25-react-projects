@@ -99,6 +99,13 @@ export const Navigation = () => {
           >
             Custom Modal
           </Link>
+          <Link
+            className="hover:text-lime-900 hover:pl-4"
+            onClick={() => setIsOpen(!isOpen)}
+            to="github-profile-finder"
+          >
+            GitHub Profile Finder
+          </Link>
         </div>
       )}
     </nav>
